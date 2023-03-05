@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+main {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 1.4rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.grid {
+  padding: 4.4rem;
+}
+
+.big-grid {
+  background-color: #fff;
+  grid-column: 1 / -1;
+}
+
+.big-grid > h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.big-grid > p {
+  color: hsl(218, 22%, 67%);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2.4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 2rem;
+  color: hsl(204, 43%, 93%);
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.monthly-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.monthly-subscription > h2 {
+  margin-bottom: 2.4rem;
+}
+
+.monthly-subscription > p {
+  margin-bottom: 2.4rem;
+}
+
+.pricing-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.pricing-box > h2 {
+  margin-bottom: 0;
+  font-size: 3.2rem;
+}
+
+.pricing-box > p {
+  font-size: 1.8rem;
+  opacity: 50%;
+}
+
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+.why-us-box {
+  width: 90%;
+}
+
+.why-us-box > h2 {
+  margin-bottom: 1.8rem;
+}
+
+.why-us-box > p {
+  opacity: 70%;
+}
+
+a:link,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1.4rem 4.8rem;
+  font-size: 2.2rem;
+  border-radius: 0.7rem;
+  text-align: center;
+}
+
+@media (max-width: 52.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 46.875em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 41.25em) {
+  body {
+    height: 150vh;
+  }
+
+  main {
+    max-width: 50rem;
+    padding: 0 1rem;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    max-width: 80rem;
+  }
+
+  p,
+  h2 {
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
